@@ -1,5 +1,6 @@
 var userController = require("../controller/userController");
 var productController = require("../controller/productController");
+var categoryController = require("../controller/categoryController.js");
 var homeController = require("../controller/homeController");
 
 exports.routing = function (app) {
@@ -8,10 +9,15 @@ exports.routing = function (app) {
     app.post("/register", userController.processRegister);
     app.get("/login", userController.generateLoginForm);
     app.post("/login", userController.processLogin);
+
     app.get("/admin/product/create", productController.generateProduct);
     app.get("/admin/product/list", productController.listProduct);
     app.post("/admin/product/save", productController.saveProduct);
-    app.get("/admin/home/home",homeController.generateHome)
+    app.get("/client/home.html",homeController.generateHome);
+
+    app.get("/admin/product/create", categoryController.generateForm);
+    app.get("/admin/product/list", categoryController.list);
+    app.post("/admin/product/save", categoryController.save);
 };
 
 // exports.routing = function (app) {

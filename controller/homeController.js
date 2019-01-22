@@ -1,3 +1,3 @@
 exports.generateHome = function (req, res) {
-    res.render("admin/home/home.ejs");
+    res.render("client/home.html");
 };

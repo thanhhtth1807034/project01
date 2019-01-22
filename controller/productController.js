@@ -1,15 +1,4 @@
-const mongoose = require("mongoose");
-const Schema = mongoose.Schema;
-
-var ProductSchema = new Schema ({
-    name: {type: String},
-    thumbnail: {type: String},
-    price: {type: Number},
-    description: {type: String},
-
-});
-var Product = mongoose.model("Product", ProductSchema);
-
+var Product = require("../models/product.js");
 
 exports.generateProduct = function (req, res) {
     res.render("admin/product/form.ejs");
