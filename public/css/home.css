@@ -137,3 +137,17 @@ i {
 #selling-cart {
     float: left;
 }
+
+.red {
+    color: red;
+}
+
+.black-link{
+    display: inline-block;
+}
+
+.artist {
+    font-size: 10px;
+    display: inline-block;
+    color: black;
+}
