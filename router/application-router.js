@@ -13,7 +13,11 @@ exports.routing = function (app) {
     app.get("/admin/product/create", productController.generateProduct);
     app.get("/admin/product/list", productController.listProduct);
     app.post("/admin/product/save", productController.saveProduct);
-    app.get("/client/home.html",homeController.generateHome);
+
+    app.get("/client/home", homeController.generateHome);
+    app.get("/client/DVD", homeController.DVDpage);
+    app.get("/client/CD", homeController.CDpage);
+    app.get("/client/book", homeController.Bookpage);
 
     app.get("/admin/product/create", categoryController.generateForm);
     app.get("/admin/product/list", categoryController.list);

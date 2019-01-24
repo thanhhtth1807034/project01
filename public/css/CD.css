@@ -1,14 +1,3 @@
-.carousel-item img {
-    height: 500px;
-    padding-top: 50px;
-
-}
-
-.nav-item .nav-link {
-    padding-right: 40px;
-}
-
-
 .item-menu {
     padding-left: 0;
 }
@@ -39,33 +28,94 @@
     display: block;
 }
 
+
+.just-in-tab1 .filter-item {
+    display: inline-flex;
+    padding-left: 10px;
+    /*float: left;*/
+}
+
+.select.small-drop.left {
+    position: relative;
+    width: 100px;
+    height: 31px;
+    border-radius: 7px;
+    cursor: pointer;
+    text-align: justify-all;
+}
+
+.go{
+    background: #00e765;
+    color: white;
+    width: 100px;
+    height: 31px;
+    border-radius: 7px;
+}
+
+.item a img {
+    height: 150px;
+    width: 150px;
+}
+
+.item {
+    margin-top:20px ;
+    /*margin-left: 50px;*/
+    float: left;
+}
+
+.clear {
+    clear: both;
+}
+
+/*#selling-cart {*/
+/*float: left;*/
+/*}*/
+
+.red {
+    color: red;
+}
+
+.black-link{
+    color: black;
+    font-family: 'Oswald', Arial ;
+    display: inline-block;
+    text-transform: uppercase;
+}
+
+.artist {
+font-size: 10px;
+display: inline-block;
+}
+
+.add-to-cart {
+    color: #00e765;
+    text-transform: uppercase;
+}
+/*
+*/
+
+.box-bottom {
+    margin-top: 10px;
+}
+.page-number {
+    float: right;
+}
+
+.page-number .prev {
+    display: inline-block;
+    margin-left: 10px;
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+}
+
+/*
+ */
 h2 {
     font-size: 32px;
     text-align: center;
     font-weight: 300;
 }
-
-hr {
-    margin-top: 20px;
-    margin-bottom: 20px;
-    border: 0;
-    border-top: 1px solid #eee;
-}
-
-/*span.steps {*/
-    /*color: #ff8c52;*/
-    /*font-size: 60px;*/
-/*}*/
-/*.glyphicons {*/
-    /*position: relative;*/
-    /*top: 1px;*/
-    /*display: inline-block;*/
-    /*font-family: 'Glyphicons Regular';*/
-    /*-webkit-font-smoothing: antialiased;*/
-    /*font-style: normal;*/
-    /*font-weight: normal;*/
-    /*line-height: 1;*/
-/*}*/
 
 footer .footer-col-1, .footer-col-2, .footer-col-3 {
     width: 29%;
@@ -113,58 +163,4 @@ footer .footer-col-1 li, .footer-col-2 li, .footer-col-3 li {
 
 .pull-left {
     padding-left: 500px;
-}
-
-
-.section-title {
-    margin-top: 20px;
-}
-
-.view-more {
-    padding-left: 10px;
-    font-size: 14px;
-}
-.item a img {
-    height: 150px;
-    width: 150px;
-}
-
-.item {
-    margin-top:20px ;
-    /*margin-left: 50px;*/
-    float: left;
-}
-
-.clear {
-    clear: both;
-}
-
-i {
-    float: left;
-    margin-top: 5px;
-}
-#selling-cart {
-    float: left;
-}
-
-.red {
-    color: red;
-}
-
-.black-link{
-    color: black;
-    font-family: 'Oswald', Arial ;
-    display: inline-block;
-    text-transform: uppercase;
-}
-
-.artist {
-    font-size: 10px;
-    display: inline-block;
-
-}
-
-.add-to-cart {
-    color: #00e765;
-    text-transform: uppercase;
 }
