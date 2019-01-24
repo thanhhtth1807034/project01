@@ -2,15 +2,31 @@
     font-family: Tahoma;
 }
 
+
 .logo img {
-    width: 150px;
+    width: 220px;
+    padding-left: 50px;
 }
+
 
 .nav-item .nav-link {
     padding-right: 40px;
     color: black;
 }
 
+a.register {
+    color: rgb(234, 97, 27) ;
+    border: 1px solid rgb(234, 97, 27);
+    border-radius: 3px;
+    font-weight: bold ;
+}
+a.login {
+    color: rgb(234, 97, 27) ;
+    border: 1px solid rgb(234, 97, 27);
+    text-align: center;
+    border-radius: 3px;
+    font-weight: bold ;
+}
 
 .item-menu {
     padding-left: 0;
@@ -23,7 +39,6 @@
     text-align: center;
     display: block;
     position: relative;
-    /*width: 150px;*/
 }
 .menu ul li a {
     text-decoration: none;
@@ -88,7 +103,7 @@
 /*float: left;*/
 /*}*/
 
-.red {
+.redd {
     color: red;
 }
 
@@ -97,6 +112,10 @@
     font-family: 'Oswald', Arial ;
     display: inline-block;
     text-transform: uppercase;
+}
+
+a:hover {
+    text-decoration: none!important;
 }
 
 .artist {
@@ -134,20 +153,26 @@ h2 {
     font-weight: 300;
 }
 
-footer .footer-col-1, .footer-col-2, .footer-col-3 {
-    width: 29%;
+.col-group {
+    /*background: #91b37c17;*/
+    background-color: #f8f9fa ;
+}
+
+
+footer .footer-col-1, .footer-col-2, .footer-col-3, .footer-col-4 {
+    width: 23%;
     display: inline-table;
-    padding-left: 10%;
+    padding-left: 8%;
 }
 
 footer .footer-col-1 h4, .footer-col-2 h4, .footer-col-3 h4 {
     color: black;
-    font-size: 20px;
-    font-weight: 600;
+    font-size: 16px;
+    font-weight: 400;
     text-transform: uppercase;
-    padding: 0;
+    padding-left: 10px;
     margin-bottom: 16px;
-    text-align: justify-all;
+    /*text-align: justify-all;*/
 }
 
 footer .footer-col-1 li, .footer-col-2 li, .footer-col-3 li {
@@ -156,19 +181,43 @@ footer .footer-col-1 li, .footer-col-2 li, .footer-col-3 li {
     margin: 0;
     width: 100%;
     text-align: justify-all;
-    font-size: 20px;
+    font-size: 16px;
     line-height: 14px;
-}
 
-.footer {
-    background: #D6D6D0;
-    padding-top: 10px;
 }
 
 
-.row:after {
-    clear: both;
+
+.links ul li a{
+    color: black;
 }
+
+
+
+.footer-col-2 ul li a {
+    color: black;
+}
+
+.footer-col-3 ul li a {
+    color: black;
+}
+.footer-col-3 h4{
+    padding-left: 45px;
+}
+.footer-col-2 h4{
+    padding-left: 40px;
+}
+
+.footer-col-4 img {
+    width: 200px;
+    padding-top: 80px ;
+}
+
+
+
+/*.row:after {*/
+/*clear: both;*/
+/*}*/
 
 .footer p {
     color: #363432;
@@ -178,6 +227,9 @@ footer .footer-col-1 li, .footer-col-2 li, .footer-col-3 li {
     text-align: center;
 }
 
-.pull-left {
-    padding-left: 500px;
+.pull {
+    text-align: center;
+}
+.sale {
+    color: grey;
 }

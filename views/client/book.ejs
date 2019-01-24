@@ -9,20 +9,21 @@
     <title>CD</title>
     <link rel="stylesheet" href="/css/book.css">
     <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/mdb.min.css">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="../../public/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
           integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 </head>
 <body>
-<div class="header container">
+<div class="header ">
     <div class="myNav navbar-right">
 
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <a href="/client/home" class="logo">
                 <img src="/img/logoo.png" alt="">
             </a>
-            <a class="navbar-brand" href="/client/home">Home</a>
+            <a class="navbar-brand" href="/client/home"><i class="fas fa-home"></i>Home</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -72,6 +73,16 @@
                         <li class="nav-item">
                             <a href="#" class="nav-link" id="checkout">Checkout</a>
                         </li>
+                        <li class="nav-item">
+                            <a class=" register nav-link" href="#" data-toggle="modal" data-target="#registerModal">
+                                Register
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="login nav-link" href="#" data-toggle="modal" data-target="#loginModal">
+                                Login
+                            </a>
+                        </li>
                     </ul>
                 </div>
 
@@ -88,8 +99,9 @@
                 <div class="just-in-tab1">
                     <div class="filter-item">
                         <label>Sort by:</label>
-                        <div class="select-container small">
-                            <select name="sorttab1" class="select small-drop left">
+                        <div class="select-container ">
+                            <select class="browser-default custom-select">
+                                <option selected>Search</option>
                                 <option value="17">Economy</option>
                                 <option value="18">Literary</option>
                                 <option value="19">Skill</option>
@@ -99,9 +111,9 @@
                     </div>
                     <div class="filter-item">
                         <label>Price range:</label>
-                        <div class="select-container x-small">
-                            <select name="pricetab1" class="select small-drop left">
-                                <option value="null">From</option>
+                        <div class="select-container ">
+                            <select class="browser-default custom-select">
+                                <option selected>From</option>
                                 <option value="0.00">0.00</option>
                                 <option value="1.00">1.00</option>
                                 <option value="2.00">2.00</option>
@@ -114,9 +126,9 @@
                     </div>
                     <div class="filter-item">
                         <label>&nbsp;</label>
-                        <div class="select-container x-small">
-                            <select name="pricetab1" class="select small-drop left">
-                                <option value="null">To</option>
+                        <div class="select-container">
+                            <select class="browser-default custom-select">
+                                <option selected>To</option>
                                 <option value="0.99">0.99</option>
                                 <option value="1.99">1.99</option>
                                 <option value="2.99">2.99</option>
@@ -153,9 +165,9 @@
                         <a href="#" class="artist">Nhiều Tác Giả</a>
                     </div>
                     <div class="price">
-                        <span class="red">$7.99</span>
+                        <span class="redd">$7.99</span>
                     </div>
-                    <a href="#" class="add-to-cart">Add To Cart</a>
+                    <a href="#" class="add-to-cart">Add To Cart <i class="fas fa-cart-plus fa-2x"></i></a>
                 </div>
                 <div class="item col-lg-2">
                     <div class="popup-container">
@@ -170,9 +182,9 @@
                         <a href="#" class="artist">Dale Carnegie </a>
                     </div>
                     <div class="price">
-                        <span class="red">$7.99</span>
+                        <span class="redd">$7.99</span>
                     </div>
-                    <a href="#" class="add-to-cart">Add To Cart</a>
+                    <a href="#" class="add-to-cart">Add To Cart <i class="fas fa-cart-plus fa-2x"></i></a>
                 </div>
                 <div class="item col-lg-2">
                     <div class="popup-container">
@@ -187,9 +199,9 @@
                         <a href="#" class="artist">Paulo Coelho </a>
                     </div>
                     <div class="price">
-                        <span class="red">$7.99</span>
+                        <span class="redd">$7.99</span>
                     </div>
-                    <a href="#" class="add-to-cart">Add To Cart</a>
+                    <a href="#" class="add-to-cart">Add To Cart <i class="fas fa-cart-plus fa-2x"></i></a>
                 </div>
                 <div class="item col-lg-2">
                     <div class="popup-container">
@@ -204,9 +216,9 @@
                         <a href="#" class="artist">Sasaki Fumio </a>
                     </div>
                     <div class="price">
-                        <span class="red">$17.99</span>
+                        <span class="redd">$17.99</span>
                     </div>
-                    <a href="#" class="add-to-cart">Add To Cart</a>
+                    <a href="#" class="add-to-cart">Add To Cart <i class="fas fa-cart-plus fa-2x"></i></a>
                 </div>
                 <div class="item col-lg-2">
                     <div class="popup-container">
@@ -221,9 +233,9 @@
                         <a href="#" class="artist">Tony Buổi Sáng</a>
                     </div>
                     <div class="price">
-                        <span class="red">$17.99</span>
+                        <span class="redd">$17.99</span>
                     </div>
-                    <a href="#" class="add-to-cart">Add To Cart</a>
+                    <a href="#" class="add-to-cart">Add To Cart <i class="fas fa-cart-plus fa-2x"></i></a>
                 </div>
                 <div class="item col-lg-2">
                     <div class="popup-container">
@@ -238,9 +250,9 @@
                         <a href="#" class="artist">Nguyễn Thiên Ngân </a>
                     </div>
                     <div class="price">
-                        <span class="red">$10.99</span>
+                        <span class="redd">$10.99</span>
                     </div>
-                    <a href="#" class="add-to-cart">Add To Cart</a>
+                    <a href="#" class="add-to-cart">Add To Cart <i class="fas fa-cart-plus fa-2x"></i></a>
                 </div>
             </div>
             <div class="box-bottom clearfix">
@@ -264,6 +276,143 @@
     </div>
 </div>
 <div class="clear"></div>
+<!--&#45;&#45;Modal login&#45;&#45;-->
+
+<div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel"
+     aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div class="form-header blue-gradient">
+                    <h3 class="modal-title"><i class="fa fa-lock" id="loginModalLabel"></i> Login:</h3>
+                </div>
+                <!--<h5 class="modal-title" id="exampleModalLabel">Modal</h5>-->
+                <button type="button" id="btn-show-modal" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form action="" id="loginForm" name="login-form">
+                    <div class="form-group">
+                        <i class="fa fa-envelope prefix"></i>
+                        <label for="loginInputEmail">Email address</label>
+                        <input type="text" name="email" class="form-control" id="loginInputEmail"
+                               aria-describedby="emailHelp" placeholder="Enter email">
+                        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
+                            else.
+                        </small>
+                    </div>
+                    <div class="form-group">
+                        <i class="fa fa-lock prefix"></i>
+                        <label for="loginInputPassword1">Password</label>
+                        <input type="password" name="password" class="form-control" id="loginInputPassword1"
+                               placeholder="Password">
+                    </div>
+                    <div class="form-group form-check">
+                        <input type="checkbox" class="form-check-input" id="Check">
+                        <label class="form-check-label" for="Check">Remember me</label>
+                    </div>
+                    <div class="modal-footer">
+                        <div class="options">
+                            <span class="grey-text">Not a member? </span><a href="#" data-toggle="modal" data-target="#registerModal">Sign Up</a>
+                            <span class="grey-text">Forgot </span><a href="#">Password?</a>
+                        </div>
+                        <button type="button" class="btn" data-dismiss="modal">Close</button>
+                        <button type="submit" class="btn btn-primary" id="btn-submit" value="submit">Sign In</button>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- -&#45;&#45;Modal register-&#45;&#45;-->
+<div class="modal fade" id="registerModal" tabindex="-1" role="dialog" aria-labelledby="registerModalLabel"
+     aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div class="form-header blue-gradient ">
+                    <h3 class="modal-title"><i class="fa fa-user" id="registerModalLabel"></i> Register:</h3>
+                </div>
+                <button type="button" id="btn-show-modal2" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form action="" id="registerForm" name="register-form">
+                    <div class="form-group">
+                        <i class="fa fa-user prefix"></i>
+                        <label for="registerInputfirstname">First name</label>
+                        <input type="text" name="firstName" class="form-control" id="registerInputfirstname"
+                               aria-describedby="emailHelp" placeholder="Firstname">
+                    </div>
+                    <div class="form-group">
+                        <i class="fa fa-user prefix"></i>
+                        <label for="registerInputLastname">Last name</label>
+                        <input type="text" name="lastName" class="form-control" id="registerInputLastname"
+                               placeholder="Lastname">
+                    </div>
+                    <div class="form-group">
+                        <i class="fas fa-phone-square"></i>
+                        <label for="registerInputPhone">Phone</label>
+                        <input type="text" name="phone" class="form-control" id="registerInputPhone"
+                               placeholder="Phone">
+                    </div>
+                    <div class="form-group">
+                        <i class="fas fa-address-card"></i>
+                        <label for="registerInputAddress">Address</label>
+                        <input type="text" name="address" class="form-control" id="registerInputAddress"
+                               placeholder="Address">
+                    </div>
+                    <div class="form-group">
+                        <i class="fas fa-address-card"></i>
+                        <label for="registerInputAvatar">Avatar</label>
+                        <input type="text" name="avatar" class="form-control" id="registerInputAvatar"
+                               placeholder="Avatar">
+                    </div>
+                    <div class="form-group">
+                        <i class="fa fa-envelope prefix"></i>
+                        <label for="InputEmail2">Email address</label>
+                        <input type="email" name="email" class="form-control" id="InputEmail2"
+                               aria-describedby="email2" placeholder="Enter email">
+                        <small id="email2" class="form-text text-muted">We'll never share your email with anyone
+                            else.
+                        </small>
+                    </div>
+                    <div class="form-group">
+                        <i class="fa fa-lock prefix"></i>
+                        <label for="InputPassword2">Password</label>
+                        <input type="password" name="password" class="form-control" id="InputPassword2"
+                               placeholder="Password">
+                    </div>
+                    <div class="form-group">
+                        <i class="fa fa-lock prefix"></i>
+                        <label for="inputConfirmPassword">Confirm Password</label>
+                        <input class="form-control" type="password" id="inputConfirmPassword" name="confirm-password"
+                               placeholder="Confirm password">
+                    </div>
+                    <div class="form-group">
+                        <i class="far fa-calendar-alt"></i>
+                        <label for="inputBirthday">Birthday</label>
+                        <input type="date" class="form-group" id="inputBirthday" name="birthday">
+                    </div>
+                    <!--<div class="form-group form-check">-->
+                    <!--<input type="checkbox" class="form-check-input" id="Check2">-->
+                    <!--<label class="form-check-label" for="Check2">Check me out</label>-->
+                    <!--</div>-->
+                    <div class="form-group">
+                        <label>&nbsp;</label>
+                        <button type="button" class="btn" data-dismiss="modal">Close</button>
+                        <button type="submit" class="btn btn-primary" id="btn-Submit" value="submit">Sign Up</button>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+    </div>
+</div>
 
 <div class="main-footer">
     <h2 style="margin-top: 60px;">It's that simple</h2>
@@ -302,9 +451,14 @@
                     <h4>Connect With Us</h4>
                     <div class="links">
                         <ul>
-                            <li class="fb"><a href="#" target="_blank" title="Like Us on FB">Facebook</a></li>
-                            <li class="inst"><a href="#" title="Follow Us on Inst" target="_blank">Instagram</a></li>
-                            <li class="ytb"><a href="#" target="_blank" title="Subcribe Us on YTB">Youtube</a></li>
+                            <li class="fb"><a class="d-flex align-items-center pl-0" href="#" target="_blank" title="Like Us on FB">
+                                    <i class="fab fa-facebook fa-2x"></i><span class="ml-2">Facebook</span></a></li>
+                            <li class="inst"><a class="d-flex align-items-center pl-0" href="#" title="Follow Us on Inst" target="_blank">
+                                    <i class="fab fa-instagram fa-2x"></i><span class="ml-2">Instagram</span></a></li>
+                            <li class="ytb"><a class="d-flex align-items-center pl-0" href="#" target="_blank" title="Subcribe Us on YTB">
+                                    <i class="fab fa-youtube fa-2x"></i><span class="ml-2">Youtube</span></a></li>
+                            <li class="email"><a class="d-flex align-items-center pl-0" href="#" target="_blank" title=" ">
+                                    <i class="fa fa-envelope fa-2x" aria-hidden="true"></i><span class="ml-2">Email</span></a></li>
                         </ul>
                     </div>
                 </div>
@@ -324,12 +478,15 @@
                         <li ><a href="#" >Supplier Code of Conduct</a></li>
                     </ul>
                 </div>
+                <div class="footer-col-4">
+                    <img  src="/img/logoo.png" alt="">
+                </div>
             </div>
+
             <hr>
             <div class="footer">
-                <div class="row">
-                    <p class="pull-left">Copyright © 2019 Ryhm House. All rights reserved.</p>
-                    <p class="pull-right">Designed by </p>
+                <div class="pull">
+                    <p >Copyright © 2019 Ryhm House. All rights reserved.</p>
                 </div>
             </div>
         </footer>
@@ -338,5 +495,8 @@
 </div>
 <script src="/js/jquery-3.3.1.min.js"></script>
 <script src="/js/bootstrap.min.js"></script>
+<script src="/js/mdb.min.js"></script>
+
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5c0942d7e6005a95"  ></script>
 </body>
 </html>

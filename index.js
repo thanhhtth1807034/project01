@@ -7,8 +7,8 @@ const mongoose = require("mongoose");
 mongoose.connect('mongodb://sa:abcd1234@ds163044.mlab.com:63044/shoptify', {useNewUrlParser: true});
 
 
-const fileUpload = require('express-fileupload');
-var clouddinary = require('cloudinary');
+// const fileUpload = require('express-fileupload');
+// var clouddinary = require('cloudinary');
 
 app.set("views", "views");
 app.set("views engine", "ejs");

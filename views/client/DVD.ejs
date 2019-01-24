@@ -9,20 +9,21 @@
     <title>CD</title>
     <link rel="stylesheet" href="/css/DVD.css">
     <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/mdb.min.css">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
           integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 </head>
 <body>
-    <div class="header container">
+    <div class="header">
         <div class="myNav navbar-right">
 
             <nav class="navbar navbar-expand-lg navbar-light bg-light">
                 <a href="/client/home" class="logo">
                     <img  src="/img/logoo.png" alt="">
                 </a>
-                <a class="navbar-brand" href="/client/home">Home</a>
+                <a class="navbar-brand" href="/client/home"><i class="fas fa-home"></i>Home</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -72,6 +73,16 @@
                             <li class="nav-item">
                                 <a href="#" class="nav-link" id="checkout">Checkout</a>
                             </li>
+                            <li class="nav-item">
+                                <a class=" register nav-link" href="#" data-toggle="modal" data-target="#registerModal">
+                                    Register
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="login nav-link" href="#" data-toggle="modal" data-target="#loginModal">
+                                    Login
+                                </a>
+                            </li>
                         </ul>
                     </div>
 
@@ -89,8 +100,9 @@
                     <div class="just-in-tab1">
                         <div class="filter-item">
                             <label>Sort by:</label>
-                            <div class="select-container small">
-                                <select name="sorttab1" class="select small-drop left">
+                            <div class="select-container">
+                                <select class="browser-default custom-select">
+                                    <option selected>Search</option>
                                     <option value="3">Movies</option>
                                     <option value="4">Band</option>
                                     <option value="5">Solo</option>
@@ -100,9 +112,9 @@
                         </div>
                         <div class="filter-item">
                             <label>Price range:</label>
-                            <div class="select-container x-small">
-                                <select name="pricetab1" class="select small-drop left">
-                                    <option value="null">From</option>
+                            <div class="select-container ">
+                                <select class="browser-default custom-select">
+                                    <option selected>From</option>
                                     <option value="0.00">0.00</option>
                                     <option value="1.00">1.00</option>
                                     <option value="2.00">2.00</option>
@@ -114,8 +126,8 @@
                         <div class="filter-item">
                             <label>&nbsp;</label>
                             <div class="select-container x-small">
-                                <select name="pricetab1" class="select small-drop left">
-                                    <option value="null">To</option>
+                                <select class="browser-default custom-select">
+                                    <option selected>To</option>
                                     <option value="0.99">0.99</option>
                                     <option value="1.99">1.99</option>
                                     <option value="2.99">2.99</option>
@@ -139,8 +151,8 @@
                 <div class="overview row">
                     <div class="item col-lg-2">
                         <div class="popup-container">
-                            <a href="https://www.secondspin.com/amgcover/dvd/small/w6/06/w60657p1bvl.jpg" class="product-image">
-                                <img src="https://www.secondspin.com/amgcover/dvd/small/w6/06/w60657p1bvl.jpg" alt="">
+                            <a href="http://image.phimmoi.net/film/7064/poster.medium.jpg" class="product-image">
+                                <img src="http://image.phimmoi.net/film/7064/poster.medium.jpg" alt="">
                             </a>
                         </div>
                         <div class="title">
@@ -150,14 +162,14 @@
                         </div>
                         <div class="price">
                             <del class="sale">$12.99</del>
-                            <span class="red">$10.00</span>
+                            <span class="redd">$10.00</span>
                         </div>
-                        <a href="#" class="add-to-cart">Add To Cart</a>
+                        <a href="#" class="add-to-cart">Add To Cart <i class="fas fa-cart-plus fa-2x"></i></a>
                     </div>
                     <div class="item col-lg-2">
                         <div class="popup-container">
-                            <a href="https://www.secondspin.com/amgcover/dvd/small/w5/77/w57713cl0xf.jpg" class="product-image">
-                                <img src="https://www.secondspin.com/amgcover/dvd/small/w5/77/w57713cl0xf.jpg" alt="">
+                            <a href="http://image.phimmoi.net/film/6375/poster.medium.jpg" class="product-image">
+                                <img src="http://image.phimmoi.net/film/6375/poster.medium.jpg" alt="">
                             </a>
                         </div>
                         <div class="title">
@@ -167,14 +179,14 @@
                         </div>
                         <div class="price">
                             <del class="sale">$7.99</del>
-                            <span class="red">$4.00</span>
+                            <span class="redd">$4.00</span>
                         </div>
-                        <a href="#" class="add-to-cart">Add To Cart</a>
+                        <a href="#" class="add-to-cart">Add To Cart <i class="fas fa-cart-plus fa-2x"></i></a>
                     </div>
                     <div class="item col-lg-2">
                         <div class="popup-container">
-                            <a href="https://www.secondspin.com/amgcover/dvd/small/w6/07/w60740hkcs0.jpg" class="product-image">
-                                <img src="https://www.secondspin.com/amgcover/dvd/small/w6/07/w60740hkcs0.jpg" alt="">
+                            <a href="http://image.phimmoi.net/film/7070/poster.medium.jpg" class="product-image">
+                                <img src="http://image.phimmoi.net/film/7070/poster.medium.jpg" alt="">
                             </a>
                         </div>
                         <div class="title">
@@ -184,14 +196,14 @@
                         </div>
                         <div class="price">
                             <del class="sale">$7.99</del>
-                            <span class="red">$4.00</span>
+                            <span class="redd">$4.00</span>
                         </div>
-                        <a href="#" class="add-to-cart">Add To Cart</a>
+                        <a href="#" class="add-to-cart">Add To Cart <i class="fas fa-cart-plus fa-2x"></i></a>
                     </div>
                     <div class="item col-lg-2">
                         <div class="popup-container">
-                            <a href="https://www.secondspin.com/amgcover/dvd/small/w1/94/w19492xdnwv.jpg" class="product-image">
-                                <img src="https://www.secondspin.com/amgcover/dvd/small/w1/94/w19492xdnwv.jpg" alt="">
+                            <a href="http://image.phimmoi.net/film/3519/poster.medium.jpg" class="product-image">
+                                <img src="http://image.phimmoi.net/film/3519/poster.medium.jpg" alt="">
                             </a>
                         </div>
                         <div class="title">
@@ -201,14 +213,14 @@
                         </div>
                         <div class="price">
                             <del class="sale">$7.99</del>
-                            <span class="red">$4.00</span>
+                            <span class="redd">$4.00</span>
                         </div>
-                        <a href="#" class="add-to-cart">Add To Cart</a>
+                        <a href="#" class="add-to-cart">Add To Cart <i class="fas fa-cart-plus fa-2x"></i></a>
                     </div>
                     <div class="item col-lg-2">
                         <div class="popup-container">
-                            <a href="https://www.secondspin.com/amgcover/dvd/small/w5/78/w57829tst7l.jpg" class="product-image">
-                                <img src="https://www.secondspin.com/amgcover/dvd/small/w5/78/w57829tst7l.jpg" alt="">
+                            <a href="http://image.phimmoi.net/film/6938/poster.medium.jpg" class="product-image">
+                                <img src="http://image.phimmoi.net/film/6938/poster.medium.jpg" alt="">
                             </a>
                         </div>
                         <div class="title">
@@ -218,47 +230,47 @@
                         </div>
                         <div class="price">
                             <del class="sale">$7.99</del>
-                            <span class="red">$4.00</span>
+                            <span class="redd">$4.00</span>
                         </div>
-                        <a href="#" class="add-to-cart">Add To Cart</a>
+                        <a href="#" class="add-to-cart">Add To Cart <i class="fas fa-cart-plus fa-2x"></i></a>
                     </div>
                     <div class="item col-lg-2">
                         <div class="popup-container">
-                            <a href="https://www.secondspin.com/amgcover/dvd/small/v2/74/v27417kzkbb.jpg" class="product-image">
-                                <img src="https://www.secondspin.com/amgcover/dvd/small/v2/74/v27417kzkbb.jpg" alt="">
+                            <a href="http://image.phimmoi.net/film/1878/poster.medium.jpg" class="product-image">
+                                <img src="http://image.phimmoi.net/film/1878/poster.medium.jpg" alt="">
                             </a>
                         </div>
                         <div class="title">
                             <a href="#" class="black-link">
-                                HARRY POTTER: COMPLETE 8-FILM COLLECTION [8 DISCS]
+                                Harry Potter 7: Harry Potter and the ...
                             </a>
                         </div>
                         <div class="price">
                             <del class="sale">$7.99</del>
-                            <span class="red">$4.00</span>
+                            <span class="redd">$4.00</span>
                         </div>
-                        <a href="#" class="add-to-cart">Add To Cart</a>
+                        <a href="#" class="add-to-cart">Add To Cart <i class="fas fa-cart-plus fa-2x"></i></a>
                     </div>
                     <div class="item col-lg-2">
                         <div class="popup-container">
-                            <a href="https://www.secondspin.com/amgcover/dvd/small/v8/06/v80640fcerw.jpg" class="product-image">
-                                <img src="https://www.secondspin.com/amgcover/dvd/small/v8/06/v80640fcerw.jpg" alt="">
+                            <a href="http://image.phimmoi.net/film/1894/poster.medium.jpg" class="product-image">
+                                <img src="http://image.phimmoi.net/film/1894/poster.medium.jpg" alt="">
                             </a>
                         </div>
                         <div class="title">
                             <a href="#" class="black-link">
-                                HOBBIT: THE DESOLATION OF SMAUG [2 DISCS] [ULTRAVIOLET]
+                                HOBBIT: THE DESOLATION OF SMAUG
                             </a>
                         </div>
                         <div class="price">
-                            <span class="red">$8.99</span>
+                            <span class="redd">$8.99</span>
                         </div>
-                        <a href="#" class="add-to-cart">Add To Cart</a>
+                        <a href="#" class="add-to-cart">Add To Cart <i class="fas fa-cart-plus fa-2x"></i></a>
                     </div>
                     <div class="item col-lg-2">
                         <div class="popup-container">
-                            <a href="https://www.secondspin.com/amgcover/dvd/small/v8/79/v87919j22eg.jpg" class="product-image">
-                                <img src="https://www.secondspin.com/amgcover/dvd/small/v8/79/v87919j22eg.jpg" alt="">
+                            <a href="http://image.phimmoi.net/film/1018/poster.medium.jpg" class="product-image">
+                                <img src="http://image.phimmoi.net/film/1018/poster.medium.jpg" alt="">
                             </a>
                         </div>
                         <div class="title">
@@ -267,14 +279,14 @@
                             </a>
                         </div>
                         <div class="price">
-                            <span class="red">$6.99</span>
+                            <span class="redd">$6.99</span>
                         </div>
-                        <a href="#" class="add-to-cart">Add To Cart</a>
+                        <a href="#" class="add-to-cart">Add To Cart <i class="fas fa-cart-plus fa-2x"></i></a>
                     </div>
                     <div class="item col-lg-2">
                         <div class="popup-container">
-                            <a href="https://www.secondspin.com/amgcover/dvd/small/w3/68/w36860umzvc.jpg" class="product-image">
-                                <img src="https://www.secondspin.com/amgcover/dvd/small/w3/68/w36860umzvc.jpg" alt="">
+                            <a href="http://image.phimmoi.net/film/4325/poster.medium.jpg" class="product-image">
+                                <img src="http://image.phimmoi.net/film/4325/poster.medium.jpg" alt="">
                             </a>
                         </div>
                         <div class="title">
@@ -283,14 +295,14 @@
                             </a>
                         </div>
                         <div class="price">
-                            <span class="red">$19.99</span>
+                            <span class="redd">$19.99</span>
                         </div>
-                        <a href="#" class="add-to-cart">Add To Cart</a>
+                        <a href="#" class="add-to-cart">Add To Cart <i class="fas fa-cart-plus fa-2x"></i></a>
                     </div>
                     <div class="item col-lg-2">
                         <div class="popup-container">
-                            <a href="https://www.secondspin.com/amgcover/dvd/small/w6/03/w60371jqc9c.jpg" class="product-image">
-                                <img src="https://www.secondspin.com/amgcover/dvd/small/w6/03/w60371jqc9c.jpg" alt="">
+                            <a href="http://image.phimmoi.net/film/6896/poster.medium.jpg" class="product-image">
+                                <img src="http://image.phimmoi.net/film/6896/poster.medium.jpg" alt="">
                             </a>
                         </div>
                         <div class="title">
@@ -299,14 +311,14 @@
                             </a>
                         </div>
                         <div class="price">
-                            <span class="red">$28.99</span>
+                            <span class="redd">$28.99</span>
                         </div>
-                        <a href="#" class="add-to-cart">Add To Cart</a>
+                        <a href="#" class="add-to-cart">Add To Cart <i class="fas fa-cart-plus fa-2x"></i></a>
                     </div>
                     <div class="item col-lg-2">
                         <div class="popup-container">
-                            <a href="https://www.secondspin.com/amgcover/dvd/small/zz/zz/zzzz4626902.jpg" class="product-image">
-                                <img src="https://www.secondspin.com/amgcover/dvd/small/zz/zz/zzzz4626902.jpg" alt="">
+                            <a href="http://image.phimmoi.net/film/3336/poster.medium.jpg" class="product-image">
+                                <img src="http://image.phimmoi.net/film/3336/poster.medium.jpg" alt="">
                             </a>
                         </div>
                         <div class="title">
@@ -315,14 +327,14 @@
                             </a>
                         </div>
                         <div class="price">
-                            <span class="red">$11.99</span>
+                            <span class="redd">$11.99</span>
                         </div>
-                        <a href="#" class="add-to-cart">Add To Cart</a>
+                        <a href="#" class="add-to-cart">Add To Cart <i class="fas fa-cart-plus fa-2x"></i></a>
                     </div>
                     <div class="item col-lg-2">
                         <div class="popup-container">
-                            <a href="https://www.secondspin.com/amgcover/dvd/small/w3/38/w33877vuaws.jpg" class="product-image">
-                                <img src="https://www.secondspin.com/amgcover/dvd/small/w3/38/w33877vuaws.jpg" alt="">
+                            <a href="http://image.phimmoi.net/film/3999/poster.medium.jpg" class="product-image">
+                                <img src="http://image.phimmoi.net/film/3999/poster.medium.jpg" alt="">
                             </a>
                         </div>
                         <div class="title">
@@ -331,30 +343,30 @@
                             </a>
                         </div>
                         <div class="price">
-                            <span class="red">$4.99</span>
+                            <span class="redd">$4.99</span>
                         </div>
-                        <a href="#" class="add-to-cart">Add To Cart</a>
+                        <a href="#" class="add-to-cart">Add To Cart <i class="fas fa-cart-plus fa-2x"></i></a>
                     </div>
                     <div class="item col-lg-2">
                         <div class="popup-container">
-                            <a href="https://www.secondspin.com/amgcover/dvd/small/t7/68/t76817ba0d5.jpg" class="product-image">
-                                <img src="https://www.secondspin.com/amgcover/dvd/small/t7/68/t76817ba0d5.jpg" alt="">
+                            <a href="http://image.phimmoi.net/film/1444/poster.medium.jpg" class="product-image">
+                                <img src="http://image.phimmoi.net/film/1444/poster.medium.jpg" alt="">
                             </a>
                         </div>
                         <div class="title">
                             <a href="#" class="black-link">
-                                FAMILY STONE [WIDESCREEN]
+                                Family Man
                             </a>
                         </div>
                         <div class="price">
-                            <span class="red">$2.99</span>
+                            <span class="redd">$2.99</span>
                         </div>
-                        <a href="#" class="add-to-cart">Add To Cart</a>
+                        <a href="#" class="add-to-cart">Add To Cart <i class="fas fa-cart-plus fa-2x"></i></a>
                     </div>
                     <div class="item col-lg-2">
                         <div class="popup-container">
-                            <a href="https://www.secondspin.com/amgcover/dvd/small/t0/51/t05155fgthj.jpg" class="product-image">
-                                <img src="https://www.secondspin.com/amgcover/dvd/small/t0/51/t05155fgthj.jpg" alt="">
+                            <a href="http://image.phimmoi.net/film/7249/poster.medium.jpg" class="product-image">
+                                <img src="http://image.phimmoi.net/film/7249/poster.medium.jpg" alt="">
                             </a>
                         </div>
                         <div class="title">
@@ -363,63 +375,63 @@
                             </a>
                         </div>
                         <div class="price">
-                            <span class="red">$4.99</span>
+                            <span class="redd">$4.99</span>
                         </div>
-                        <a href="#" class="add-to-cart">Add To Cart</a>
+                        <a href="#" class="add-to-cart">Add To Cart <i class="fas fa-cart-plus fa-2x"></i></a>
                     </div>
                     <div class="item col-lg-2">
                         <div class="popup-container">
-                            <a href="https://www.secondspin.com/amgcover/dvd/small/v1/40/v14042c6cys.jpg" class="product-image">
-                                <img src="https://www.secondspin.com/amgcover/dvd/small/v1/40/v14042c6cys.jpg" alt="">
+                            <a href="http://image.phimmoi.net/film/2871/poster.medium.jpg" class="product-image">
+                                <img src="http://image.phimmoi.net/film/2871/poster.medium.jpg" alt="">
                             </a>
                         </div>
                         <div class="title">
                             <a href="#" class="black-link">
-                                DOC MARTIN: SERIES 1 [2 DISCS]
+                                Steve Jobs
                             </a>
                         </div>
                         <div class="price">
-                            <span class="red">$6.99</span>
+                            <span class="redd">$6.99</span>
                         </div>
-                        <a href="#" class="add-to-cart">Add To Cart</a>
+                        <a href="#" class="add-to-cart">Add To Cart <i class="fas fa-cart-plus fa-2x"></i></a>
                     </div>
                     <div class="item col-lg-2">
                         <div class="popup-container">
-                            <a href="https://www.secondspin.com/amgcover/dvd/small/w0/62/w06287meqki.jpg" class="product-image">
-                                <img src="https://www.secondspin.com/amgcover/dvd/small/w0/62/w06287meqki.jpg" alt="">
+                            <a href="http://image.phimmoi.net/film/4877/poster.medium.jpg" class="product-image">
+                                <img src="http://image.phimmoi.net/film/4877/poster.medium.jpg" alt="">
                             </a>
                         </div>
                         <div class="title">
                             <a href="#" class="black-link">
-                                MAN ON WIRE [WIDESCREEN]
+                                Man to Man
                             </a>
                         </div>
                         <div class="price">
                             <del class="sale">$4.99</del>
-                            <span class="red">$2.99</span>
+                            <span class="redd">$2.99</span>
                         </div>
-                        <a href="#" class="add-to-cart">Add To Cart</a>
+                        <a href="#" class="add-to-cart">Add To Cart <i class="fas fa-cart-plus fa-2x"></i></a>
                     </div>
                     <div class="item col-lg-2">
                         <div class="popup-container">
-                            <a href="https://www.secondspin.com/amgcover/dvd/small/t6/60/t66023fa4bo.jpg" class="product-image">
-                                <img src="https://www.secondspin.com/amgcover/dvd/small/t6/60/t66023fa4bo.jpg" alt="">
+                            <a href="http://image.phimmoi.net/film/5462/poster.medium.jpg" class="product-image">
+                                <img src="http://image.phimmoi.net/film/5462/poster.medium.jpg" alt="">
                             </a>
                         </div>
                         <div class="title">
                             <a href="#" class="black-link">
-                                ALIENS OF THE DEEP
+                                The Water Horse: Legend Of ...
                             </a>
                         </div>
                         <div class="price">
-                            <span class="red">$2.99</span>
+                            <span class="redd">$2.99</span>
                         </div>
-                        <a href="#" class="add-to-cart">Add To Cart</a>
+                        <a href="#" class="add-to-cart">Add To Cart <i class="fas fa-cart-plus fa-2x"></i></a>
                     </div>
                     <div class="item col-lg-2">
                         <div class="popup-container">
-                            <a href="https://www.secondspin.com/amgcover/dvd/small/w3/41/w34143my6l4.jpg" class="product-image">
-                                <img src="https://www.secondspin.com/amgcover/dvd/small/w3/41/w34143my6l4.jpg" alt="">
+                            <a href="http://image.phimmoi.net/film/4922/poster.medium.jpg" class="product-image">
+                                <img src="http://image.phimmoi.net/film/4922/poster.medium.jpg" alt="">
                             </a>
                         </div>
                         <div class="title">
@@ -428,9 +440,9 @@
                             </a>
                         </div>
                         <div class="price">
-                            <span class="red">$17.99</span>
+                            <span class="redd">$17.99</span>
                         </div>
-                        <a href="#" class="add-to-cart">Add To Cart</a>
+                        <a href="#" class="add-to-cart">Add To Cart <i class="fas fa-cart-plus fa-2x"></i></a>
                     </div>
 
                 </div>
@@ -457,6 +469,143 @@
         </div>
     </div>
     <div class="clear"></div>
+    <!--&#45;&#45;Modal login&#45;&#45;-->
+
+    <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel"
+         aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="form-header blue-gradient">
+                        <h3 class="modal-title"><i class="fa fa-lock" id="loginModalLabel"></i> Login:</h3>
+                    </div>
+                    <!--<h5 class="modal-title" id="exampleModalLabel">Modal</h5>-->
+                    <button type="button" id="btn-show-modal" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form action="" id="loginForm" name="login-form">
+                        <div class="form-group">
+                            <i class="fa fa-envelope prefix"></i>
+                            <label for="loginInputEmail">Email address</label>
+                            <input type="text" name="email" class="form-control" id="loginInputEmail"
+                                   aria-describedby="emailHelp" placeholder="Enter email">
+                            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
+                                else.
+                            </small>
+                        </div>
+                        <div class="form-group">
+                            <i class="fa fa-lock prefix"></i>
+                            <label for="loginInputPassword1">Password</label>
+                            <input type="password" name="password" class="form-control" id="loginInputPassword1"
+                                   placeholder="Password">
+                        </div>
+                        <div class="form-group form-check">
+                            <input type="checkbox" class="form-check-input" id="Check">
+                            <label class="form-check-label" for="Check">Remember me</label>
+                        </div>
+                        <div class="modal-footer">
+                            <div class="options">
+                                <span class="grey-text">Not a member? </span><a href="#" data-toggle="modal" data-target="#registerModal">Sign Up</a>
+                                <span class="grey-text">Forgot </span><a href="#">Password?</a>
+                            </div>
+                            <button type="button" class="btn" data-dismiss="modal">Close</button>
+                            <button type="submit" class="btn btn-primary" id="btn-submit" value="submit">Sign In</button>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- -&#45;&#45;Modal register-&#45;&#45;-->
+    <div class="modal fade" id="registerModal" tabindex="-1" role="dialog" aria-labelledby="registerModalLabel"
+         aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="form-header blue-gradient ">
+                        <h3 class="modal-title"><i class="fa fa-user" id="registerModalLabel"></i> Register:</h3>
+                    </div>
+                    <button type="button" id="btn-show-modal2" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form action="" id="registerForm" name="register-form">
+                        <div class="form-group">
+                            <i class="fa fa-user prefix"></i>
+                            <label for="registerInputfirstname">First name</label>
+                            <input type="text" name="firstName" class="form-control" id="registerInputfirstname"
+                                   aria-describedby="emailHelp" placeholder="Firstname">
+                        </div>
+                        <div class="form-group">
+                            <i class="fa fa-user prefix"></i>
+                            <label for="registerInputLastname">Last name</label>
+                            <input type="text" name="lastName" class="form-control" id="registerInputLastname"
+                                   placeholder="Lastname">
+                        </div>
+                        <div class="form-group">
+                            <i class="fas fa-phone-square"></i>
+                            <label for="registerInputPhone">Phone</label>
+                            <input type="text" name="phone" class="form-control" id="registerInputPhone"
+                                   placeholder="Phone">
+                        </div>
+                        <div class="form-group">
+                            <i class="fas fa-address-card"></i>
+                            <label for="registerInputAddress">Address</label>
+                            <input type="text" name="address" class="form-control" id="registerInputAddress"
+                                   placeholder="Address">
+                        </div>
+                        <div class="form-group">
+                            <i class="fas fa-address-card"></i>
+                            <label for="registerInputAvatar">Avatar</label>
+                            <input type="text" name="avatar" class="form-control" id="registerInputAvatar"
+                                   placeholder="Avatar">
+                        </div>
+                        <div class="form-group">
+                            <i class="fa fa-envelope prefix"></i>
+                            <label for="InputEmail2">Email address</label>
+                            <input type="email" name="email" class="form-control" id="InputEmail2"
+                                   aria-describedby="email2" placeholder="Enter email">
+                            <small id="email2" class="form-text text-muted">We'll never share your email with anyone
+                                else.
+                            </small>
+                        </div>
+                        <div class="form-group">
+                            <i class="fa fa-lock prefix"></i>
+                            <label for="InputPassword2">Password</label>
+                            <input type="password" name="password" class="form-control" id="InputPassword2"
+                                   placeholder="Password">
+                        </div>
+                        <div class="form-group">
+                            <i class="fa fa-lock prefix"></i>
+                            <label for="inputConfirmPassword">Confirm Password</label>
+                            <input class="form-control" type="password" id="inputConfirmPassword" name="confirm-password"
+                                   placeholder="Confirm password">
+                        </div>
+                        <div class="form-group">
+                            <i class="far fa-calendar-alt"></i>
+                            <label for="inputBirthday">Birthday</label>
+                            <input type="date" class="form-group" id="inputBirthday" name="birthday">
+                        </div>
+                        <!--<div class="form-group form-check">-->
+                        <!--<input type="checkbox" class="form-check-input" id="Check2">-->
+                        <!--<label class="form-check-label" for="Check2">Check me out</label>-->
+                        <!--</div>-->
+                        <div class="form-group">
+                            <label>&nbsp;</label>
+                            <button type="button" class="btn" data-dismiss="modal">Close</button>
+                            <button type="submit" class="btn btn-primary" id="btn-Submit" value="submit">Sign Up</button>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
 
     <div class="main-footer">
         <h2 style="margin-top: 60px;">It's that simple</h2>
@@ -495,9 +644,14 @@
                         <h4>Connect With Us</h4>
                         <div class="links">
                             <ul>
-                                <li class="fb"><a href="#" target="_blank" title="Like Us on FB">Facebook</a></li>
-                                <li class="inst"><a href="#" title="Follow Us on Inst" target="_blank">Instagram</a></li>
-                                <li class="ytb"><a href="#" target="_blank" title="Subcribe Us on YTB">Youtube</a></li>
+                                <li class="fb"><a class="d-flex align-items-center pl-0" href="#" target="_blank" title="Like Us on FB">
+                                        <i class="fab fa-facebook fa-2x"></i><span class="ml-2">Facebook</span></a></li>
+                                <li class="inst"><a class="d-flex align-items-center pl-0" href="#" title="Follow Us on Inst" target="_blank">
+                                        <i class="fab fa-instagram fa-2x"></i><span class="ml-2">Instagram</span></a></li>
+                                <li class="ytb"><a class="d-flex align-items-center pl-0" href="#" target="_blank" title="Subcribe Us on YTB">
+                                        <i class="fab fa-youtube fa-2x"></i><span class="ml-2">Youtube</span></a></li>
+                                <li class="email"><a class="d-flex align-items-center pl-0" href="#" target="_blank" title=" ">
+                                        <i class="fa fa-envelope fa-2x" aria-hidden="true"></i><span class="ml-2">Email</span></a></li>
                             </ul>
                         </div>
                     </div>
@@ -517,12 +671,15 @@
                             <li ><a href="#" >Supplier Code of Conduct</a></li>
                         </ul>
                     </div>
+                    <div class="footer-col-4">
+                        <img  src="/img/logoo.png" alt="">
+                    </div>
                 </div>
+
                 <hr>
                 <div class="footer">
-                    <div class="row">
-                        <p class="pull-left">Copyright © 2019 Ryhm House. All rights reserved.</p>
-                        <p class="pull-right">Designed by </p>
+                    <div class="pull">
+                        <p >Copyright © 2019 Ryhm House. All rights reserved.</p>
                     </div>
                 </div>
             </footer>
@@ -532,5 +689,7 @@
 
     <script src="/js/jquery-3.3.1.min.js"></script>
     <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/mdb.min.js"></script>
+    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5c0942d7e6005a95"  ></script>
 </body>
 </html>
