@@ -5,11 +5,11 @@
 .logo img {
     width: 150px;
 }
-
 .nav-item .nav-link {
     padding-right: 40px;
     color: black;
 }
+
 
 .item-menu {
     padding-left: 0;
@@ -100,8 +100,8 @@
 }
 
 .artist {
-font-size: 10px;
-display: inline-block;
+    font-size: 10px;
+    display: inline-block;
 }
 
 .add-to-cart {

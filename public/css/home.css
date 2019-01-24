@@ -1,16 +1,29 @@
+*{
+    font-family: Tahoma;
+}
+
 .carousel-item img {
     height: 500px;
     padding-top: 50px;
 
 }
 
+.logo img {
+    width: 150px;
+}
+
 .nav-item .nav-link {
     padding-right: 40px;
+    color: black;
 }
 
 
 .item-menu {
     padding-left: 0;
+    border: 5px;
+}
+.item-menu li a{
+    margin: 10px;
 }
 
 .menu ul li {
@@ -22,7 +35,7 @@
 .menu ul li a {
     text-decoration: none;
     display: block;
-    color: dodgerblue;
+    color: black;
 }
 .menu ul li a:hover {
     color: grey;
@@ -99,7 +112,7 @@ footer .footer-col-1 li, .footer-col-2 li, .footer-col-3 li {
 }
 
 
-.row:after {
+.pull:after {
     clear: both;
 }
 
@@ -156,6 +169,11 @@ i {
     font-family: 'Oswald', Arial ;
     display: inline-block;
     text-transform: uppercase;
+    text-decoration: none;
+}
+
+a:hover {
+     text-decoration: none!important;
 }
 
 .artist {
@@ -167,4 +185,8 @@ i {
 .add-to-cart {
     color: #00e765;
     text-transform: uppercase;
+}
+
+.sale {
+    color: grey;
 }

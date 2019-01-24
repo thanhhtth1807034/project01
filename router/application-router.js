@@ -18,6 +18,7 @@ exports.routing = function (app) {
     app.get("/client/DVD", homeController.DVDpage);
     app.get("/client/CD", homeController.CDpage);
     app.get("/client/book", homeController.Bookpage);
+    app.get("/client/magazine", homeController.Magazinepage);
 
     app.get("/admin/product/create", categoryController.generateForm);
     app.get("/admin/product/list", categoryController.list);

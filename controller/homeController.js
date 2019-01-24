@@ -15,3 +15,7 @@ exports.CDpage = function (req, res) {
 exports.Bookpage = function (req, res) {
     res.render("client/book.ejs");
 };
+
+exports.Magazinepage = function (req, res) {
+    res.render("client/magazine.ejs");
+};
